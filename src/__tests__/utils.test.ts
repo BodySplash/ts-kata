@@ -1,5 +1,5 @@
 
-import {input} from './input_day1';
+import {input, input2} from './input_day1';
 
 
 function count_increments_in_depths_measurements(depths_measurements: number[]) {
@@ -41,7 +41,16 @@ describe('Sonar sweep', () => {
   it('do for real', () => {
       const result = count_increments_in_depths_measurements(input);
 
-      expect(result).toEqual(10);
+      expect(result).toEqual(1139);
   });
 
+  it('do for real for josselin', () => {
+    const result = count_increments_in_depths_measurements(input2);
+
+    expect(result).toEqual(1226);
+  });
+
+  it('slice array', () => {
+
+  });
 });
